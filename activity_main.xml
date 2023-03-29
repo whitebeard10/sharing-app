@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7eff9"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#009688"
+        android:fontFamily="@font/new_cust"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/requests"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="16dp"/>
+
+    <Button
+        android:id="@+id/newRequestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_request"
+        android:background="#BDBDBD"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:background="#BDBDBD"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+
+</LinearLayout>

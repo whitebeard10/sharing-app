@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VIT-Share</string>
+    <string name="welcome_message">Welcome to VIT Share!</string>
+    <string name="requests">Requests</string>
+    <string name="title">Title</string>
+
+    <string name="submit">Submit</string>
+    <string name="error_title_empty">Please enter a title</string>
+    <string name="error_desc_empty">Please enter a description</string>
+    <string name="success_request">Your request has been posted</string>
+    <string name="logout_button">Logout</string>
+    <string name="new_request_title">Enter title here</string>
+    <string name="request_title_hint">Enter title here</string>
+    <string name="request_description_hint">Enter description here \n (with contact number)</string>
+    <string name="submit_request_button">Submit</string>
+    <string name="welcome">Welcome</string>
+    <string name="new_request">New Request</string>
+    <string name="logout">Logout</string>
+    <string name="description">Description:</string>
+    <string name="contact">Contact:</string>
+
+
+</resources>
