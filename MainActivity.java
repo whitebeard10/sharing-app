@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showNewRequestDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Add New Request");
+        builder.setTitle("Add A New Request");
 
         View viewInflated = LayoutInflater.from(this).inflate(R.layout.new_request_dialog, (ViewGroup) findViewById(android.R.id.content), false);
         final TextView titleEditText = viewInflated.findViewById(R.id.titleEditText);
@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void showAcceptRequestDialog(final Request request, final int position) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Accept Request");
+        builder.setTitle("\nAccept Request\n");
 
-        builder.setMessage("Do you want to accept this request?\n\nTitle: " + request.getTitle() + "\nDescription: " + request.getDescription());
+        builder.setMessage("\nDo you want to accept this request?\n\nTitle: " + request.getTitle() + "\nDescription: " + request.getDescription());
 
         builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
             @Override
@@ -120,12 +120,12 @@ public class MainActivity extends AppCompatActivity {
                 int userId = 1; // TODO: Get the logged-in user ID
                 boolean success = databaseHelper.acceptRequest(request.getId(), userId);
                 if (success) {
-                    Toast.makeText(MainActivity.this, "Request accepted successfully.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Request accepted successfully!", Toast.LENGTH_SHORT).show();
                     request.setAcceptedBy(userId);
                     requestList.set(position, request);
                     adapter.notifyDataSetChanged();
                 } else {
-                    Toast.makeText(MainActivity.this, "Failed to accept request.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Failed to accept request!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
