@@ -21,8 +21,12 @@ To clone the Sharing App, follow these steps:
 2. Change the current working directory to the location where you want the cloned directory.
 3. Type `git clone`, and then paste the URL of this repository.
 
-``````bash
-git clone https://github.com/whitebeard10/sharing-app.git `````
+```bash
+git clone https://github.com/whitebeard10/sharing-app.git
+
+
+```
+
 4. Press Enter to create your local clone.
 
 ### Contributing to Sharing App
@@ -36,6 +40,4 @@ Push to the original branch: git push origin <project_name>/<location>
 Create the pull request.
 
 License
-This project uses the following license: MIT license.
-
-``````
+This project uses the following license: <MIT license>.
