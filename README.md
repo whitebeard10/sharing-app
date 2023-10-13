@@ -40,4 +40,4 @@ Push to the original branch: git push origin <project_name>/<location>
 Create the pull request.
 
 License
-This project uses the following license: <MIT license>.
+This project uses the following license: 'MIT license'.
