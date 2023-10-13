@@ -33,11 +33,11 @@ git clone https://github.com/whitebeard10/sharing-app.git
 
 To contribute to Sharing App, follow these steps:
 
--Fork this repository.
--Create a branch: git checkout -b <branch_name>.
--Make your changes and commit them: git commit -m '<commit_message>'
--Push to the original branch: git push origin <project_name>/<location>
--Create the pull request.
+- Fork this repository.
+- Create a branch: git checkout -b <branch_name>.
+- Make your changes and commit them: git commit -m '<commit_message>'
+- Push to the original branch: git push origin <project_name>/<location>
+- Create the pull request.
 
 License
 This project uses the following license: 'MIT license'.
