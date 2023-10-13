@@ -39,5 +39,6 @@ To contribute to Sharing App, follow these steps:
 - Push to the original branch: git push origin <project_name>/<location>
 - Create the pull request.
 
-License
+## License
+
 This project uses the following license: 'MIT license'.
