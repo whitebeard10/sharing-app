@@ -1,4 +1,5 @@
 package com.example.vit_share;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,8 @@ public class RequestListAdapter extends BaseAdapter {
 
         } else {
             statusTextView.setText("Accepted by user " + request.getAcceptedBy());
-            return null;
+            statusTextView.setTextColor(Color.parseColor("#76E276"));
+            return convertView;
         }
 
 //        return convertView;

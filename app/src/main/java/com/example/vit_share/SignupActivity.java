@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.example.vit_share.databinding.ActivitySignupBinding;
 
+import java.util.Objects;
+
 public class SignupActivity extends AppCompatActivity {
 
     ActivitySignupBinding binding;
@@ -40,13 +42,13 @@ public class SignupActivity extends AppCompatActivity {
                     // Check if the password and confirm password fields match, and show an error message if they don't
                     if (password.equals(confirmPassword)) {
                         // Check if the email entered by the user already exists in the database
-                        Boolean checkUserEmail = databaseHelper.checkUserEmail(email);
+                        boolean checkUserEmail = databaseHelper.checkUserEmail(email);
 
                         if (checkUserEmail == false) {
                             // If the email doesn't already exist in the database, insert the user's information into the database
-                            Boolean insert = databaseHelper.insertUser(email, password);
+                            boolean insert = databaseHelper.insertUser(email, password);
 
-                            if (insert == true) {
+                            if (insert) {
                                 // If the data is successfully inserted into the database, show a success message and redirect the user to the login page
                                 Toast.makeText(SignupActivity.this, "SignUp Success!", Toast.LENGTH_SHORT).show();
                                 Intent intent =  new Intent(getApplicationContext(), LoginActivity.class);

@@ -1,61 +1,81 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#d7eff9"
-
     android:orientation="vertical">
+
 
     <TextView
         android:id="@+id/title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_message"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="#009688"
         android:fontFamily="@font/new_cust"
-        android:padding="16dp"/>
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/welcome_message"
+        android:textColor="#009688"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/requests"
-        android:textColor="#9C27B0"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:padding="16dp"/>
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#009688"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/requests"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
 
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:divider="#d7eff9"
+        android:layout_margin="10dp"
         android:layout_weight="1"
-        android:dividerHeight="16dp"/>
+        android:dividerHeight="8dp" />
 
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/newRequestButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/new_request"
-        android:background="#BDBDBD"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:padding="16dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttongs_bg"
+        android:padding="16dp"
+        android:text="@string/new_request"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttongs_bg"
+        android:padding="16dp"
         android:text="@string/logout"
-        android:background="#BDBDBD"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:padding="16dp" />
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

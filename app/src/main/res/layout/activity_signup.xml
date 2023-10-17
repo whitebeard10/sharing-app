@@ -13,13 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="20dp">
@@ -33,6 +33,7 @@
                 android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
                 android:drawablePadding="8dp"
                 android:hint="Email"
+                android:textColorHint="#B5B1B1"
                 android:textColor="#000000"
                 android:padding="8dp" />
 
@@ -45,6 +46,7 @@
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:hint="Password"
+                android:textColorHint="#B5B1B1"
                 android:inputType="textPassword"
                 android:textColor="#000000"
                 android:padding="8dp" />
@@ -57,6 +59,7 @@
                 android:background="@drawable/lavender_border"
                 android:drawableLeft="@drawable/ic_baseline_password_24"
                 android:drawablePadding="8dp"
+                android:textColorHint="#B5B1B1"
                 android:hint="Confirm Password"
                 android:inputType="textPassword"
                 android:textColor="#000000"
