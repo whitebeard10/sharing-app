@@ -1,4 +1,5 @@
 package com.example.vit_share;
+
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,13 +12,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.content.Intent;
+
 import com.example.vit_share.LoginActivity;
-
-
 
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import java.util.ArrayList;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
 
         databaseHelper = new DatabaseHelper(this);
@@ -38,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
         requestList = databaseHelper.getAllRequests();
         adapter = new RequestListAdapter(requestList);
+
         listView.setAdapter(adapter);
+
 
         Button newRequestButton = findViewById(R.id.newRequestButton);
         newRequestButton.setOnClickListener(new View.OnClickListener() {
